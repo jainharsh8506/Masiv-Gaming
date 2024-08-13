@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Masiv Gaming - Epic Games Made For True Gamers!</title>
+  <meta name="title" content="Masiv Gaming - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is a gaming website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+  <style>
+  #pagination {
+    margin: 0;
+    padding: 0;
+    text-align: center
+  }
+  #pagination li {
+    display: inline
+  }
+  #pagination li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 2px;
+    color: #ffffff;
+    color: var(--text-white);
+    font-size: var(--fontSize-6);
+    font-weight: var(--weight-semiBold);
+  }
+  
+  /* Active and Hoverable Pagination */
+  #pagination li a {
+    border-radius: 5px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s
+      
+  }
+  #pagination li a.active {
+    background-image: var(--gradient-1);
+  }
+  #pagination li a:hover:not(.active) {
+    background-image: var(--gradient-1);
+  } 
+
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="110" height="53" alt="Masiv Gaming home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#games" class="navbar-link" data-nav-link>Games</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>contact</a>
+          </li>
+
+        </ul>
+      </nav>
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <div class="hero has-before" id="home">
+        <div class="container">
+
+          <p class="section-subtitle">Enjoy The Games</p>
+
+          <h1 class="h1 title hero-title">Epic Games Made For <br> True Gamers!</h1>
+
+          <div class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="850" height="414" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-banner-bg.png" alt="" class="hero-banner-bg">
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- 
+        - #GAMES
+      -->
+
+      <section class="section games" aria-label="our latest games" id="games">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            All <span class="span">Games</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom">
+            Dive into a Universe of Endless Possibilities Where Every Game Is a New Adventure Awaiting Your Command.
+          </p>
+
+          <ul class="games-list" id="gameList">
+          </ul>
+
+        </div>
+      </section>
+      <div class="pagination">
+        <ul id="pagination">
+          <li><a id="prevBtn" onclick="prevPage()" >«</a></li>
+          <li><a id="nextBtn" onclick="nextPage()">»</a></li>
+        </ul>         
+      </div>
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="150" height="73" loading="lazy" alt="Masiv Gaming logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              153 Williamson Plaza, Maggieberg, MT 09514
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@masivgaming.com" class="contact-link">Info@masivgaming.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Phone:</span>
+
+            <a href="tel:+12345678910" class="contact-link">+1 (234) 567-8910</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 Masiv Gaming All Rights Reserved.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+  });
+
+const games = [
+{
+  "Game Name": "Hextris",
+  "Entrypoint": "games/paradise1/hextris-lite/index.html",
+  "Game Image": "games/Banners Batch 1/hextris-lite.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "The Pond",
+  "Entrypoint": "games/paradise1/pond/index.html",
+  "Game Image": "games/Banners Batch 1/pond.png",
+  "Game Type": "Casual"
+},
+{
+  "Game Name": "2048",
+  "Entrypoint": "games/paradise1/2048-lite/index.html",
+  "Game Image": "games/Banners Batch 1/2048-lite.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Tap Tap Tap",
+  "Entrypoint": "games/paradise1/taptaptap/play/index.html",
+  "Game Image": "games/Banners Batch 1/taptaptap.png",
+  "Game Type": "Casual"
+},
+{
+  "Game Name": "Particle Clicker",
+  "Entrypoint": "games/paradise1/particle-clicker/index.html",
+  "Game Image": "games/Banners Batch 1/particle-clicker.png",
+  "Game Type": "Casual"
+},
+{
+  "Game Name": "HexGL",
+  "Entrypoint": "games/paradise1/hexgl-lite/index.html",
+  "Game Image": "games/Banners Batch 1/hexgl-lite.png",
+  "Game Type": "Racing"
+},
+{
+  "Game Name": "3d.city",
+  "Entrypoint": "games/paradise1/3d.city/index.html",
+  "Game Image": "games/Banners Batch 1/3d.city.png",
+  "Game Type": "Simulation"
+},
+{
+  "Game Name": "Clumsy Bird",
+  "Entrypoint": "games/paradise1/clumsy-bird/index.html",
+  "Game Image": "games/Banners Batch 1/clumsy-bird.png",
+  "Game Type": "Arcade"
+},
+{
+  "Game Name": "Fire 'n Ice",
+  "Entrypoint": "games/paradise1/fire-n-ice/index.html",
+  "Game Image": "games/Banners Batch 1/fire-n-ice.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Paint Run",
+  "Entrypoint": "games/paradise1/paint-run/index.html",
+  "Game Image": "games/Banners Batch 1/paint-run.png",
+  "Game Type": "Running"
+},
+{
+  "Game Name": "Hyperspace G",
+  "Entrypoint": "games/paradise1/hyperspace-garbage-collection/index.html",
+  "Game Image": "games/Banners Batch 1/hyperspace-garbage-collection.png",
+  "Game Type": "Action"
+},
+{
+  "Game Name": "pacman",
+  "Entrypoint": "games/paradise1/pacman-lite/index.html",
+  "Game Image": "games/Banners Batch 1/pacman-lite.png",
+  "Game Type": "Arcade"
+},
+{
+  "Game Name": "The House",
+  "Entrypoint": "games/paradise1/the-house/index.html",
+  "Game Image": "games/Banners Batch 1/the-house.png",
+  "Game Type": "Adventure"
+},
+{
+  "Game Name": "Dead Valley",
+  "Entrypoint": "games/paradise1/dead-valley/index.html",
+  "Game Image": "games/Banners Batch 1/dead-valley.png",
+  "Game Type": "Action"
+},
+{
+  "Game Name": "Pool",
+  "Entrypoint": "games/paradise1/classic-pool/index.html",
+  "Game Image": "games/Banners Batch 1/classic-pool.png",
+  "Game Type": "Sports"
+},
+{
+  "Game Name": "Twisty P",
+  "Entrypoint": "games/paradise1/twisty-polyhedra/index.html",
+  "Game Image": "games/Banners Batch 1/twisty-polyhedra.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Underrun",
+  "Entrypoint": "games/paradise1/underrun/index-debug.html",
+  "Game Image": "games/Banners Batch 1/underrun.png",
+  "Game Type": "Action"
+},
+{
+  "Game Name": "Snakisms",
+  "Entrypoint": "games/paradise1/snakisms/index.html",
+  "Game Image": "games/Banners Batch 1/snakisms.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Hearts",
+  "Entrypoint": "games/paradise1/html5-hearts/index.html",
+  "Game Image": "games/Banners Batch 1/html5-hearts.png",
+  "Game Type": "Casino"
+},
+{
+  "Game Name": "Eight Queens",
+  "Entrypoint": "games/paradise1/EightQueens/index.html",
+  "Game Image": "games/Banners Batch 1/EightQueens.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Chess",
+  "Entrypoint": "games/paradise1/chess/index.html",
+  "Game Image": "games/Banners Batch 1/chess.png",
+  "Game Type": "Strategy"
+},
+{
+  "Game Name": "Mah-jongg",
+  "Entrypoint": "games/paradise1/mah-jongg/index.html",
+  "Game Image": "games/Banners Batch 1/mah-jongg.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Asteroids",
+  "Entrypoint": "games/paradise1/html5-asteroids/index.html",
+  "Game Image": "games/Banners Batch 1/html5-asteroids.png",
+  "Game Type": "Arcade"
+},
+{
+  "Game Name": "Missile Game",
+  "Entrypoint": "games/paradise1/missile-game/index.html",
+  "Game Image": "games/Banners Batch 1/missile-game.png",
+  "Game Type": "Shooting"
+},
+{
+  "Game Name": "NS-Shaft",
+  "Entrypoint": "games/paradise1/ns-shaft/index.html",
+  "Game Image": "games/Banners Batch 1/ns-shaft.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Colorful Life",
+  "Entrypoint": "games/paradise1/colorful-life/index.html",
+  "Game Image": "games/Banners Batch 1/colorful-life.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Life",
+  "Entrypoint": "games/paradise1/life/index.html",
+  "Game Image": "games/Banners Batch 1/life.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Piano J",
+  "Entrypoint": "games/paradise1/javascript-piano/index.html",
+  "Game Image": "games/Banners Batch 1/javascript-piano.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Chordomatic",
+  "Entrypoint": "games/paradise1/chordomatic/app/chord-player.html",
+  "Game Image": "games/Banners Batch 1/chordomatic.png",
+  "Game Type": "Other"
+},
+{
+"Game Name": "Fire Truck",
+"Entrypoint": "games/paradise/firetruck/index.html",
+"Game Image": "games/Banners Batch 1/Fire_truck 1024-500.png",
+"Game Type": "Puzzle"
+},
+{
+"Game Name": "Clan Samurai",
+"Entrypoint": "games/paradise/clansamurai/index.html",
+"Game Image": "games/Banners Batch 1/Clan_Samurai.png",
+"Game Type": "Arcade"
+},
+{
+"Game Name": "Forest Game",
+"Entrypoint": "games/paradise/forestgame/index.html",
+"Game Image": "games/Banners Batch 1/Forest game.png",
+"Game Type": "other"
+},
+{
+"Game Name": "Circle Traffic",
+"Entrypoint": "games/paradise/circletraffic/index.html",
+"Game Image": "games/Banners Batch 1/Circle_Traffic.png",
+"Game Type": "Arcade"
+},
+{
+"Game Name": "Death Soul",
+"Entrypoint": "games/paradise/deathsoul/index.html",
+"Game Image": "games/Banners Batch 1/deathsoul 1024-500.jpg",
+"Game Type": "Action"
+},
+{
+"Game Name": "Bingo",
+"Entrypoint": "games/paradise/bingo/index.html",
+"Game Image": "games/Banners Batch 1/Bingo banner.png",
+"Game Type": "Casino"
+},
+{
+"Game Name": "Dino Bubbles",
+"Entrypoint": "games/paradise/dinobubbles/index.html",
+"Game Image": "games/Banners Batch 1/Dino bubble banner.png",
+"Game Type": "Casual"
+},
+{
+"Game Name": "5 Fruit",
+"Entrypoint": "games/paradise/5fruit/index.html",
+"Game Image": "games/Banners Batch 1/5 fruit banner.png",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Catch The Monster",
+"Entrypoint": "games/paradise/catchthemonster/index.html",
+"Game Image": "games/Banners Batch 1/Catch_The_Monster.jpg",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Airwar 1941",
+"Entrypoint": "games/paradise/airwar1941/index.html",
+"Game Image": "games/Banners Batch 1/Air_War_1941.jpg",
+"Game Type": "Action"
+},
+{
+"Game Name": "Bear Chase",
+"Entrypoint": "",
+"Game Image": "games/Banners Batch 1/Bear chase 1024-500.jpg",
+"Game Type": "Arcade"
+},
+{
+"Game Name": "Chippolino",
+"Entrypoint": "games/paradise/chippolino/index.html",
+"Game Image": "games/Banners Batch 1/Chipollino_Another_Story.jpg",
+"Game Type": "Running"
+},
+{
+"Game Name": "Halloween Story",
+"Entrypoint": "games/paradise/halloweenstory/index.html",
+"Game Image": "games/Banners Batch 1/Halloween story.png",
+"Game Type": "other"
+},
+{
+"Game Name": "Duck Shooter",
+"Entrypoint": "",
+"Game Image": "games/Banners Batch 1/Duck_shooter 1024-500.png",
+"Game Type": "Sports"
+},
+{
+"Game Name": "Blockit",
+"Entrypoint": "games/paradise/blockit/index.html",
+"Game Image": "games/Banners Batch 1/Block_It.jpg",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Dont Miss",
+"Entrypoint": "games/paradise/dontmiss/index.html",
+"Game Image": "games/Banners Batch 1/Dont_Miss.jpg",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Freaky Math",
+"Entrypoint": "games/paradise/freakymath/index.html",
+"Game Image": "games/Banners Batch 1/Freaky_Math.png",
+"Game Type": "Kids"
+},
+{
+"Game Name": "Balloon Paradise",
+"Entrypoint": "games/paradise/balloonparadise/index.html",
+"Game Image": "games/Banners Batch 1/Ballon_Paradise.jpg",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Jack Adventures",
+"Entrypoint": "games/paradise/jackadventures/index.html",
+"Game Image": "games/Banners Batch 1/Jack_Adventures.png",
+"Game Type": "Adventure"
+},
+{
+"Game Name": "Babel",
+"Entrypoint": "",
+"Game Image": "games/Banners Batch 1/Bable 1024-500.png",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Flying Bird",
+"Entrypoint": "games/paradise/flyingbird/index.html",
+"Game Image": "games/Banners Batch 1/Flying_Bird.jpg",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Bike Speed",
+"Entrypoint": "",
+"Game Image": "games/Banners Batch 1/Bike Speed.jpg",
+"Game Type": "Arcade"
+},
+{
+"Game Name": "Flip The Gun",
+"Entrypoint": "games/paradise/flipthegun/index.html",
+"Game Image": "games/Banners Batch 1/Flip the gun.png",
+"Game Type": "Shooting"
+},
+{
+"Game Name": "Color Valley",
+"Entrypoint": "",
+"Game Image": "games/Banners Batch 1/Colour_Valley.jpg",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Ball Up",
+"Entrypoint": "games/paradise/ballup/index.html",
+"Game Image": "games/Banners Batch 1/Ball up banner.png",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Air Hockey",
+"Entrypoint": "games/paradise/airhockey/index.html",
+"Game Image": "games/Banners Batch 1/Air hockey banner.png",
+"Game Type": "Arcade"
+},
+{
+"Game Name": "Fishing Frenzy",
+"Entrypoint": "",
+"Game Image": "games/Banners Batch 1/Fishing_Frenzy_1024-512.png",
+"Game Type": "Casual"
+},
+{
+"Game Name": "Beer Pushing",
+"Entrypoint": "",
+"Game Image": "games/Banners Batch 1/Beer Pushing.jpg",
+"Game Type": "Casual"
+},
+{
+"Game Name": "bluestory",
+"Entrypoint": "games/paradise/bluestory/index.html",
+"Game Image": "games/Banners Batch 1/Blue_Story.png",
+"Game Type": "Puzzle"
+},
+{
+  "Game Name": "FishingFrenzy",
+  "Entrypoint": "games/paradise/29/index.html",
+  "Game Image": "games/Banners Batch 1/FishingFrenzy.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "SpacePurge",
+  "Entrypoint": "games/paradise/30/index.html",
+  "Game Image": "games/Banners Batch 1/SpacePurge.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "TankDefender",
+  "Entrypoint": "games/paradise/31/index.html",
+  "Game Image": "games/Banners Batch 1/TankDefender.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Casino - Cards Memory",
+  "Entrypoint": "games/paradise/32/index.html",
+  "Game Image": "games/Banners Batch 1/Casino_-_Cards_Memory.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "NinjaRun",
+  "Entrypoint": "games/paradise/33/index.html",
+  "Game Image": "games/Banners Batch 1/NinjaRun.png",
+  "Game Type": "Other"
+},
+
+{
+  "Game Name": "ZombieShooter",
+  "Entrypoint": "games/paradise/35/index.html",
+  "Game Image": "games/Banners Batch 1/ZombieShooter.png",
+  "Game Type": "Other"
+},
+
+
+{
+  "Game Name": "Zombie Uprising",
+  "Entrypoint": "games/paradise/42/index.html",
+  "Game Image": "games/Banners Batch 1/Zombie_Uprising.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Smiles",
+  "Entrypoint": "games/paradise/43/index.html",
+  "Game Image": "games/Banners Batch 1/Smiles.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "TouchBall",
+  "Entrypoint": "games/paradise/46/index.html",
+  "Game Image": "games/Banners Batch 1/TouchBall.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Professor Bubble",
+  "Entrypoint": "games/paradise/49/index.html",
+  "Game Image": "games/Banners Batch 1/Professor_Bubble.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Stick Soldier",
+  "Entrypoint": "games/paradise/50/index.html",
+  "Game Image": "games/Banners Batch 1/Stick_Soldier.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Mad Shark",
+  "Entrypoint": "games/paradise/51/index.html",
+  "Game Image": "games/Banners Batch 1/Mad_Shark.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Great Air Battles",
+  "Entrypoint": "games/paradise/52/index.html",
+  "Game Image": "games/Banners Batch 1/Great_Air_Battles.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Quick Dice",
+  "Entrypoint": "games/paradise/53/index.html",
+  "Game Image": "games/Banners Batch 1/Quick_Dice.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Candy Match 3",
+  "Entrypoint": "games/paradise/54/index.html",
+  "Game Image": "games/Banners Batch 1/CandyMatch3.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Kids True Color",
+  "Entrypoint": "games/paradise/55/index.html",
+  "Game Image": "games/Banners Batch 1/Kids_True_Color.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Christmas Match",
+  "Entrypoint": "games/paradise/57/index.html",
+  "Game Image": "games/Banners Batch 1/ChristmasMatch.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Speed Racer",
+  "Entrypoint": "games/paradise/58/index.html",
+  "Game Image": "games/Banners Batch 1/Speed_Racer.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Shoot Robbers",
+  "Entrypoint": "games/paradise/60/index.html",
+  "Game Image": "games/Banners Batch 1/Shoot_Robbers.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Jelly Match 3",
+  "Entrypoint": "games/paradise/61/index.html",
+  "Game Image": "games/Banners Batch 1/JellyMatch3.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Girl Dress Up",
+  "Entrypoint": "games/paradise/63/index.html",
+  "Game Image": "games/Banners Batch 1/GirlDressUp.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Traffic",
+  "Entrypoint": "games/paradise/64/index.html",
+  "Game Image": "games/Banners Batch 1/Traffic.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Halloween Bubble Shooter",
+  "Entrypoint": "games/paradise/65/index.html",
+  "Game Image": "games/Banners Batch 1/HalloweenBubbleShooter.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "TRANSFORMERS",
+  "Entrypoint": "games/paradise/66/index.html",
+  "Game Image": "games/Banners Batch 1/TRANSFORMERS.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Ranger vs Zombies",
+  "Entrypoint": "games/paradise/67/index.html",
+  "Game Image": "games/Banners Batch 1/Ranger_vs_Zombies.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Brick Out",
+  "Entrypoint": "games/paradise/68/index.html",
+  "Game Image": "games/Banners Batch 1/BrickOut.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Fruit Snake",
+  "Entrypoint": "games/paradise/70/index.html",
+  "Game Image": "games/Banners Batch 1/FruitSnake.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Fruit Slasher",
+  "Entrypoint": "games/paradise/71/index.html",
+  "Game Image": "games/Banners Batch 1/FruitSlasher.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Tower",
+  "Entrypoint": "games/paradise1/tower/index.html",
+  "Game Image": "games/Banners Batch 1/tower.png",
+  "Game Type": "Puzzle"
+},
+{
+  "Game Name": "Jacks or Better",
+  "Entrypoint": "games/paradise/1/index.html",
+  "Game Image": "games/Banners Batch 1/Jacks or Better.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Ramses Treasure",
+  "Entrypoint": "games/paradise/2/index.html",
+  "Game Image": "games/Banners Batch 1/Ramses Treasure.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Super Pongal",
+  "Entrypoint": "games/paradise/41/index.html",
+  "Game Image": "games/Banners Batch 1/Super Pongal.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "The Fruits",
+  "Entrypoint": "games/paradise/3/index.html",
+  "Game Image": "games/Banners Batch 1/The Fruits.png",
+  "Game Type": "Other"
+},
+{
+"Game Name": "Deadly Race",
+"Entrypoint": "games/paradise/deadlyrace/index.html",
+"Game Image": "games/Banners Batch 1/Deadly race banner.png",
+"Game Type": "Racing"
+},
+{
+"Game Name": "Clumsy Bird Master",
+"Entrypoint": "games/downloaded-games/clumsy-bird-master/index.html",
+"Game Image": "games/downloaded-games/clumsy-bird-master/data/img/logo.png",
+"Game Type": "Racing"
+},
+{
+"Game Name": "Delta Master",
+"Entrypoint": "games/downloaded-games/javascript-delta-master/index.html",
+"Game Image": "games/downloaded-games/javascript-delta-master/images/aliens.png",
+"Game Type": "Action"
+},
+
+
+{
+"Game Name": "Dungeon Crawler",
+"Entrypoint": "games/downloaded-games/dungeon-crawler-rpg-od-main/index.html",
+"Game Image": "games/downloaded-games/dungeon-crawler-rpg-od-main/assets/sprites/goblin_boss.png",
+"Game Type": "Racing"
+},
+
+
+{
+"Game Name": "Race Master",
+"Entrypoint": "games/downloaded-games/javascript-racer-master/index.html",
+"Game Image": "games/downloaded-games/javascript-racer-master/images/sprites/billboard01.png",
+"Game Type": "Action"
+},
+{
+"Game Name": "Brawl",
+"Entrypoint": "games/downloaded-games/Brawl/html5/brawl.html",
+"Game Image": "games/Banners Batch 1/Brawl.png",
+"Game Type": "Racing"
+},
+{
+  "Game Name": "Quiz Game 2",
+  "Entrypoint": "games/paradise/19/index.html",
+  "Game Image": "games/Banners Batch 1/Quiz Game 2.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Super Cowboy Run",
+  "Entrypoint": "games/paradise/26/index.html",
+  "Game Image": "games/Banners Batch 1/Super Cowboy Run.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Duck Shooter",
+  "Entrypoint": "games/paradise/27/index.html",
+  "Game Image": "games/Banners Batch 1/Duck Shooter.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Crazy Runner",
+  "Entrypoint": "games/paradise/28/index.html",
+  "Game Image": "games/Banners Batch 1/Crazy Runner.png",
+  "Game Type": "Other"
+},
+{
+"Game Name": "Tower Platformer",
+"Entrypoint": "games/downloaded-games/javascript-tower-platformer-master/index.html",
+"Game Image": "games/downloaded-games/javascript-tower-platformer-master/images/monster/slimeleft2.png",
+"Game Type": "Action"
+},
+
+{
+  "Game Name": "Run Into Death",
+  "Entrypoint": "games/paradise/4/index.html",
+  "Game Image": "games/Banners Batch 1/Run Into Death.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Penalty Kicks",
+  "Entrypoint": "games/paradise/5/index.html",
+  "Game Image": "games/Banners Batch 1/Penalty Kicks.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Jelly Break",
+  "Entrypoint": "games/paradise/7/index.html",
+  "Game Image": "games/Banners Batch 1/Jelly Break.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Jump Ninja Hero",
+  "Entrypoint": "games/paradise/6/index.html",
+  "Game Image": "games/Banners Batch 1/Jump Ninja Hero.png",
+  "Game Type": "Other"
+},
+
+{
+  "Game Name": "Classic Bowling",
+  "Entrypoint": "games/paradise/8/index.html",
+  "Game Image": "games/Banners Batch 1/Classic Bowling.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Flight Sim",
+  "Entrypoint": "games/paradise/10/index.html",
+  "Game Image": "games/Banners Batch 1/Flight Sim.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Alien Invasion",
+  "Entrypoint": "games/paradise/11/index.html",
+  "Game Image": "games/Banners Batch 1/Alien Invasion.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Blocks",
+  "Entrypoint": "games/paradise/12/index.html",
+  "Game Image": "games/Banners Batch 1/Blocks.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Flip Card Memory Test",
+  "Entrypoint": "games/paradise/14/index.html",
+  "Game Image": "games/Banners Batch 1/Flip Card Memory Test.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "15",
+  "Entrypoint": "games/paradise/15/index.html",
+  "Game Image": "games/Banners Batch 1/chordomatic.png",
+  "Game Type": "Other"
+},
+{
+  "Game Name": "Ludo Multiplayer",
+  "Entrypoint": "games/paradise/16/index.html",
+  "Game Image": "games/Banners Batch 1/Ludo Multiplayer.png",
+  "Game Type": "Other"
+},
+{
+"Game Name": "Asteroids",
+"Entrypoint": "games/downloaded-games/HTML5-Asteroids-master/index.html",
+"Game Image": "games/downloaded-games/Brawl/brawl.p8.png",
+"Game Type": "Action"
+},
+
+];
+
+let currentPage = 1;
+const gamesPerPage = 9;
+const gameList = document.getElementById('gameList');
+const pagination = document.getElementById('pagination');
+
+// Function to calculate number of pages
+function calculatePages() {
+  const totalPages = Math.ceil(games.length / gamesPerPage);
+  pagination.innerHTML = '';
+
+  // Previous button
+  const prevBtn = document.createElement('li');
+  prevBtn.innerHTML = `<a class="prev" onclick="prevPage()">«</a>`;
+  pagination.appendChild(prevBtn);
+
+  // Page numbers
+  for (let i = 1; i <= totalPages; i++) {
+      const pageItem = document.createElement('li');
+      pageItem.innerHTML = `<a onclick="goToPage(${i})">${i}</a>`;
+      if (i === currentPage) {
+          pageItem.firstChild.classList.add('active');
+      }
+      pagination.appendChild(pageItem);
+  }
+
+  // Next button
+  const nextBtn = document.createElement('li');
+  nextBtn.innerHTML = `<a class="next" onclick="nextPage()">»</a>`;
+  pagination.appendChild(nextBtn);
+}
+
+// Function to display games for a specific page
+function displayGames(page) {
+  gameList.innerHTML = ''; // Clear existing games
+  const startIndex = (page - 1) * gamesPerPage;
+  const endIndex = startIndex + gamesPerPage;
+  const displayedGames = games.slice(startIndex, endIndex);
+
+  displayedGames.forEach(game => {
+      const gameCard = `
+          <li class="revealed" data-reveal="bottom">
+              <div class="games-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="${game['Game Image']}" width="600" height="400" loading="lazy"
+                    alt="${game['Game Name']}" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a class="card-tag">${game['Game Type']}</a>
+
+                  
+
+                  <h3 class="h3">
+                    <a href="${game.Entrypoint}" target="_blank" class="card-title">${game['Game Name']}</a>
+                  </h3>
+
+                  <a href="${game.Entrypoint}" target="_blank" class="btn" data-btn>Play Now</a>
+
+                </div>
+
+              </div>
+            </li>
+      `;
+      gameList.innerHTML += gameCard;
+  });
+
+  // Update current page indicator
+  const activePage = document.querySelector('#pagination .active');
+  if (activePage) activePage.classList.remove('active');
+  const newActivePage = document.querySelector(`#pagination li:nth-child(${page + 1}) a`);
+  if (newActivePage) newActivePage.classList.add('active');
+}
+
+function nextPage() {
+  if (currentPage < Math.ceil(games.length / gamesPerPage)) {
+      currentPage++;
+      displayGames(currentPage);
+  }
+}
+
+function prevPage() {
+  if (currentPage > 1) {
+      currentPage--;
+      displayGames(currentPage);
+  }
+}
+
+// Function to navigate to a specific page
+function goToPage(page) {
+  currentPage = page;
+  displayGames(currentPage);
+}
+
+// Initial setup
+calculatePages(); // Generate pagination buttons
+displayGames(currentPage); // Display initial set of games
+
+</script>
+</body>
+
+</html>
