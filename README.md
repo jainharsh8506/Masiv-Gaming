@@ -1,19 +1,10 @@
 <div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/unigine)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/unigine?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/unigine?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/FAo8xeq4NKw?style=social)](https://youtu.be/FAo8xeq4NKw)
 
-  <br />
-  <br />
+  <h2 align="center">Masiv Gaming - HTML Gaming Website</h2>
 
-  <h2 align="center">Unigine - eSports Gaming Website</h2>
+  Masiv Gaming is a fully responsive HTML Games gaming website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-  Unigine is a fully responsive esports gaming website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
-
-  <a href="https://codewithsadee.github.io/unigine/"><strong>➥ Live Demo</strong></a>
+  <a href="https://masivgaming.info.gf/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
@@ -21,7 +12,7 @@
 
 ### Demo Screeshots
 
-![Unigine Desktop Demo](./readme-images/desktop.png "Desktop Demo")
+![Masiv Gaming Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
 ### Prerequisites
 
@@ -31,24 +22,16 @@ Before you begin, ensure you have met the following requirements:
 
 ### Run Locally
 
-To run **Unigine** locally, run this command on your git bash:
+To run **Masiv Gaming** locally, run this command on your git bash:
 
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/unigine.git
+sudo git clone https://github.com/jainharsh8506/Masiv-Gaming.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/unigine.git
+git clone https://github.com/jainharsh8506/Masiv-Gaming.git
 ```
-
-### Contact
-
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-### License
-
-[MIT](https://choosealicense.com/licenses/mit/)

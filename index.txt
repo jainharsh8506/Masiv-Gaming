@@ -1,12 +1,10 @@
-Unigine - Epic Games Made For True Gamers!
-
-This is an esports and gaming html template made by codewithsadee
+Masiv Gaming - Epic Games Made For True Gamers!
 
 
 
 #---------- HEADER ----------#
 
-alt = unigine home
+alt = Masiv Gaming home
 
 home
 tournament
@@ -113,7 +111,7 @@ Financial Experts Support Help You To Find Out.
 
 #---------- FOOTER ----------#
 
-alt = Unigine logo
+alt = Masiv Gaming logo
 
 Our success in creating business solutions is due in large part to our talented and highly committed team.
 
@@ -136,7 +134,7 @@ Location:
 153 Williamson Plaza, Maggieberg, MT 09514
 
 Join Us:
-Info@unigine.com
+Info@masivgaming.com
 
 Phone:
 +1 (234) 567-8910
@@ -145,7 +143,7 @@ Newsletter Signup
 
 Your Email
 Subscribe Now
-&copy; 2022 codewithsadee All Rights Reserved.
+&copy; 2024 Masiv Gaming All Rights Reserved.
 
 
 
